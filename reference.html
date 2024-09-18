@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <title>Hello!</title>
+
+        <style>
+            h1 {
+                color: blue;
+                text-align: center;
+            }
+        </style>
+
+        <style>
+            div {
+                background-color: blue;
+                width: 100px;
+                height: 100px;
+                padding: 20px;
+                margin: 20px;
+                font-family: Arial, sans-serif;
+                font-size: 28px;
+                font-weight: bold;
+                border: 3px solid black;
+            }
+
+            table, th, td, tr {
+                border: 3px solid black;
+                border-collapse: collapse;
+                padding: 5px;
+            }
+
+            .baz {
+                color: red;
+            }
+
+            ul > li {
+                color: blue;
+            }
+
+            a {
+                color: green;
+            }
+
+
+            a[href="https://facebook.com"] {
+                color: red;
+            }
+
+            button {
+                width: 200px;
+                height: 59px;
+                font-size: 34px;
+                background-color: green;
+            }
+
+            button:hover {
+                background-color: yellow;
+            }
+
+            @media (min-width: 699px)  {
+                body {
+                    background-color: red;
+                }
+            }
+
+            @media (max-width: 599px) {
+                body {
+                    background-color: blue;
+                }
+            }
+
+            #container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            #container > div {
+                background-color: green;
+                font-size: 20px;
+                margin: 20px;
+                padding: 20px;
+                width: 100px;
+
+            }
+
+            #grid {
+                background-color: green;
+                display: grid;
+                padding: 20px;
+                grid-column-gap: 20px;
+                grid-row-gap: 10px;
+                grid-template-columns: 200px 200px auto;
+            }
+
+            .grid-item {
+                background-color: white;
+                font-size: 20px;
+                padding: 20px;
+                text-align: center;
+            }
+        </style>
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <div>
+            Hello, world!
+        </div>
+
+
+        <ol>
+            <li>
+              <h1 class="baz">Hello, world!!!!</h1>
+              <h1 class="baz">Second Heading</h1>
+              <ul>
+                <li>Hello world</li>
+              </ul>
+            </li>
+        </ol>
+
+        <ul>
+            <li><a href="https://google.com">Google</a></li>
+            <li><a href="https://facebook.com">Facebook</a></li>
+            <li><a href="https://youtube.com">Youtube</a></li>
+        </ul>
+
+        <img src="asde" alt="cat" width="100px">
+        <a href="https://google.com">Click Here</a>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Ocean</th>
+                    <th>Average Depth</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pacific Ocean</td>
+                </tr>
+                <tr>
+                    <td>Pacific Ocean</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <form>
+            <div>
+                <input type="text" placeholder="Full Name" name="name">
+                <input type="submit">
+            </div>
+
+            <div>
+                <input name="country" list="countries" placeholder="Country">
+                <datalist id="countries">
+                    <option value="Afghanistan">
+                    <option value="Australia">
+                </datalist>
+            </div>
+
+            <div>
+                Favorite Color?
+                <input name="color" type="radio" value="red"> Red
+            </div>
+
+
+        </form>
+
+        <button>Click Me</button>
+
+        <div id="container">
+            <div>1. This is some sample text inside of a div to demo Flexbox.</div>
+            <div>2. This is some sample text inside of a div to demo Flexbox.</div>
+            <div>3. This is some sample text inside of a div to demo Flexbox.</div>
+            <div>4. This is some sample text inside of a div to demo Flexbox.</div>
+            <div>5. This is some sample text inside of a div to demo Flexbox.</div>
+            <div>6. This is some sample text inside of a div to demo Flexbox.</div>
+        </div>
+
+        <div id="grid"></div>
+            <div class="grid-item">1. This is some sample text inside of a div to demo Flexbox.</div>
+            <div class="grid-item">2. This is some sample text inside of a div to demo Flexbox.</div>
+            <div class="grid-item">3. This is some sample text inside of a div to demo Flexbox.</div>
+            <div class="grid-item">4. This is some sample text inside of a div to demo Flexbox.</div>
+            <div class="grid-item">5. This is some sample text inside of a div to demo Flexbox.</div>
+            <div class="grid-item">6. This is some sample text inside of a div to demo Flexbox.</div>
+        </div>
+    </body>
+</html>
