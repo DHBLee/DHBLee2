@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
         <title>Search Results</title>
-    </head>
-    <body>
+{% endblock %}
+
+{% block body %}
         <h1>Search Results:</h1>
         <a href="{% url 'encyclopedia:entry_page' title %}">{{ title }}</a>
-    </body>
-</html>
+{% endblock %}

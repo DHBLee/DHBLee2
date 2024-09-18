@@ -24,6 +24,7 @@ def save_entry(title, content):
         print("hello")
         default_storage.delete(filename)
     default_storage.save(filename, ContentFile(content))
+    return content
 
 
 def get_entry(title):
