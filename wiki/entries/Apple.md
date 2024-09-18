@@ -1,1 +1,0 @@
-a type of fruit that has a red color
