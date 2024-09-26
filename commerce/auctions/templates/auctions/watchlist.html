@@ -1,0 +1,32 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2>Your Watchlist</h2>
+    <br>
+
+    {% if watchlists %}
+        <ul id="nodecor">
+            {% for watchlist in watchlists %}
+                <hr>
+                <div style="display: flex;">
+                    <li>
+                        <img src="{{ watchlist.auction.url }}" alt="cat" width="140px">
+                    </li>
+                    <li style="margin-left: 40px;">
+                        <a href="{% url 'listing' watchlist.auction.id %}">
+                            <h4>{{ watchlist.auction.title }}</h4>
+                        </a>
+                        <p>{{ watchlist.auction.description }}</p>
+                        <p>Current Bid: ${{ watchlist.auction.bid }}</p>
+                        <p>Created: {{ watchlist.auction.now }}</p>
+                    </li>
+                </div>  
+                <hr>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Your watchlist is empty</p>
+    {% endif %}
+
+    <a href="{% url 'index' %}">Back to Home</a>
+{% endblock %}
