@@ -25,7 +25,7 @@ def index(request):
             "bid_listings": bid_listings,
         })
     else:
-        return render(request, "auctions/index.html")
+        return HttpResponseRedirect(reverse('active_listing'))
     
 def close(request, id):
     if request.method == "POST":
@@ -172,7 +172,13 @@ def listing(request, id):
                     user=request.user,
                     bid_amount=bid_amount,
                 )
+                comment2 = Comments(
+                            auction=listing,
+                            user=request.user,
+                            content=comment1,
+                        )
                 highest_bid.save()
+                comment2.save()
 
                 return render(request, "auctions/listing.html", {
                     "bid": bid_amount,
@@ -183,42 +189,67 @@ def listing(request, id):
                     "highest_bid": highest_bid,
                     "current_watchlist": current_watchlist,
                 })
-
-            elif float(bid_amount) > float(highest_bid.bid_amount):
-                highest_bid.bid_amount = bid_amount
-                bid = Bids(
-                    auction=listing,
-                    user=request.user,
-                    bid_amount=bid_amount,
-                )
-                comment2 = Comments(
-                    auction=listing,
-                    user=request.user,
-                    content=comment1,
-                )
-                comment2.save()
-                bid.save()
-                
-
-                return render(request, "auctions/listing.html", {
-                    "bid": bid,
-                    "listing": listing,
-                    "id": listing.id,
-                    "comment": current_comment,
-                    "bids":all_bids,
-                    "highest_bid": highest_bid,
-                    "current_watchlist": current_watchlist,
-                })
             else:
-                return render(request, "auctions/listing.html", {
-                    "listing": listing,
-                    "message": "Your bid must be higher than the current highest bid",
-                    "id": listing.id,
-                    "comment": current_comment,
-                    "bids":all_bids,
-                    "highest_bid": highest_bid,
-                    "current_watchlist": current_watchlist,
-                })
+                if highest_bid:
+                    if float(bid_amount) > float(highest_bid.bid_amount):
+                        highest_bid.bid_amount = bid_amount
+                        bid = Bids(
+                            auction=listing,
+                            user=request.user,
+                            bid_amount=bid_amount,
+                        )
+                        comment2 = Comments(
+                            auction=listing,
+                            user=request.user,
+                            content=comment1,
+                        )
+                        comment2.save()
+                        bid.save()
+
+                        return render(request, "auctions/listing.html", {
+                            "bid": bid,
+                            "listing": listing,
+                            "id": listing.id,
+                            "comment": current_comment,
+                            "bids":all_bids,
+                            "highest_bid": highest_bid,
+                            "current_watchlist": current_watchlist,
+                        })
+                else:
+                   if float(bid_amount) > float(listing.bid):
+                        highest_bid.bid_amount = bid_amount
+                        bid = Bids(
+                            auction=listing,
+                            user=request.user,
+                            bid_amount=bid_amount,
+                        )
+                        comment2 = Comments(
+                            auction=listing,
+                            user=request.user,
+                            content=comment1,
+                        )
+                        comment2.save()
+                        bid.save()
+
+                        return render(request, "auctions/listing.html", {
+                            "bid": bid,
+                            "listing": listing,
+                            "id": listing.id,
+                            "comment": current_comment,
+                            "bids":all_bids,
+                            "highest_bid": highest_bid,
+                            "current_watchlist": current_watchlist,
+                        })
+
+            return render(request, "auctions/listing.html", {
+                "listing": listing,
+                "message": "Your bid must be higher than the current bid",
+                "id": listing.id,
+                "comment": current_comment,
+                "bids":all_bids,
+                "highest_bid": highest_bid,
+                "current_watchlist": current_watchlist,
+            })
         elif form_type == "watchlist_form":
             watchlist = Watchlist (
                 auction=listing,

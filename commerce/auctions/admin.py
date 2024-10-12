@@ -1,3 +1,4 @@
+
 from django.contrib import admin
 from .models import User, Bids, Comments, Auction_listings, Auction_results
 # Register your models here.

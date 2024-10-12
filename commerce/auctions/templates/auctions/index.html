@@ -1,77 +1,81 @@
 {% extends "auctions/layout.html" %}
 
 {% block body %}
-    {% if auction_results %}
-        <h2>Your Auction Wins</h2>
+    {% if user.is_authenticated %}
+        {% if auction_results %}
+            <h2>Your Auction Wins</h2>
+            <ul id="nodecor">
+                {% for result in auction_results %}
+                    <li>{{ result.message }} <small>{{ result.auction.title }}</small></li>
+            </ul>
+                {% endfor %}
+        {% else %}
+            <p>No auction wins yet.</p>
+        {% endif %}
+
+
+        <h2>Your Listings</h2>
         <ul id="nodecor">
-            {% for result in auction_results %}
-                <li>{{ result.message }} <small>{{ result.auction.title }}</small></li>
+            {% if listings %}
+                {% for list in listings %}
+                    <hr>
+                    <div style="display: flex;">
+                        <li>
+                            {% if list.url %}
+                                <img src="{{ list.url }}" alt="cat" width="140px">
+                            {% else %}
+                                <img src="path/to/placeholder-image.jpg" alt="Placeholder Image" width="140px">
+                            {% endif %}
+                        </li>
+                        <li style="margin-left: 40px;">
+                            <a href="{% url 'listing' list.id %}">
+                                <h5>{{ list.title }} </h5>
+                            </a>
+                            <h6><b>Original Price: ${{ list.bid }} </b></h6>
+                            {% if list.description %}
+                                <h6>{{ list.description }}</h6>
+                            {% endif %}
+                            <p>Created {{ list.now }}</p6>
+                        </li>
+                    </div>
+                    <hr>
+                {% endfor %}
+            {% else %}
+                    <p>You don't have any listings yet</p>
+            {% endif %}
         </ul>
-            {% endfor %}
+        <h2>Listing you Bid on</h2>
+        <ul id="nodecor">
+            {% if bid_listings %}
+                {% for list in bid_listings %}
+                    <hr>
+                    <div style="display: flex;">
+                        <li>
+                            {% if list.url %}
+                                <img src="{{ list.url }}" alt="cat" width="140px">
+                            {% else %}
+                                <img src="path/to/placeholder-image.jpg" alt="Placeholder Image" width="140px">
+                            {% endif %}
+                        </li>
+                        <li style="margin-left: 40px;">
+                            <a href="{% url 'listing' list.id %}">
+                                <h5>{{ list.title }} </h5>
+                            </a>
+                            <h6><b>Original Price: ${{ list.bid }} </b></h6>
+                            {% if list.description %}
+                                <h6>{{ list.description }}</h6>
+                            {% endif %}
+                            <p>Created {{ list.now }}</p6>
+                        </li>
+                    </div>
+                    <hr>
+                {% endfor %}
+            {% else %}
+                    <p>You don't have any biddings yet</p>
+            {% endif %}
+        </ul>
     {% else %}
-        <p>No auction wins yet.</p>
+        <p>blahblah</p>
     {% endif %}
-
-
-    <h2>Your Listings</h2>
-    <ul id="nodecor">
-        {% if listings %}
-            {% for list in listings %}
-                <hr>
-                <div style="display: flex;">
-                    <li>
-                        {% if list.url %}
-                            <img src="{{ list.url }}" alt="cat" width="140px">
-                        {% else %}
-                            <img src="path/to/placeholder-image.jpg" alt="Placeholder Image" width="140px">
-                        {% endif %}
-                    </li>
-                    <li style="margin-left: 40px;">
-                        <a href="{% url 'listing' list.id %}">
-                            <h5>{{ list.title }} </h5>
-                        </a>
-                        <h6><b>Original Price: ${{ list.bid }} </b></h6>
-                        {% if list.description %}
-                            <h6>{{ list.description }}</h6>
-                        {% endif %}
-                        <p>Created {{ list.now }}</p6>
-                    </li>
-                </div>
-                <hr>
-            {% endfor %}
-        {% else %}
-                <p>You don't have any listings yet</p>
-        {% endif %}
-    </ul>
-    <h2>Listing you Bid on</h2>
-    <ul id="nodecor">
-        {% if bid_listings %}
-            {% for list in bid_listings %}
-                <hr>
-                <div style="display: flex;">
-                    <li>
-                        {% if list.url %}
-                            <img src="{{ list.url }}" alt="cat" width="140px">
-                        {% else %}
-                            <img src="path/to/placeholder-image.jpg" alt="Placeholder Image" width="140px">
-                        {% endif %}
-                    </li>
-                    <li style="margin-left: 40px;">
-                        <a href="{% url 'listing' list.id %}">
-                            <h5>{{ list.title }} </h5>
-                        </a>
-                        <h6><b>Original Price: ${{ list.bid }} </b></h6>
-                        {% if list.description %}
-                            <h6>{{ list.description }}</h6>
-                        {% endif %}
-                        <p>Created {{ list.now }}</p6>
-                    </li>
-                </div>
-                <hr>
-            {% endfor %}
-        {% else %}
-                <p>You don't have any biddings yet</p>
-        {% endif %}
-    </ul>
-
+        
 {% endblock %}

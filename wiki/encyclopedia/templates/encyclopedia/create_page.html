@@ -1,0 +1,26 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    <title>Create Page</title>
+{% endblock %}
+        
+   
+{% block body %}
+    {% if error_message %}
+    <p style="color: red;">{{ error_message }}</p>
+    {% endif %}
+    <h1>Create a New Page</h1>
+
+    <form action="{% url 'encyclopedia:create_page' %}" method="POST">
+        {% csrf_token %}
+        <p><label for="title">Input the <b>Title</b> of the page</label></p>
+        <textarea id="title" name="title" rows="1" cols="5"></textarea>
+        <p><label for="description">Input the <b>Description</b> of the page</label></p>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>Click the "Submit" button and the form-data will be sent to a page on the 
+    server called "action_page.php".</p>
+{% endblock %}
