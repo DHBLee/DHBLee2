@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin: 3.5rem 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border: solid 2px red;
+}
+
+
+@media(width <= 376px) {
+    .container {
+        max-width: 376px;
+        flex-direction: column;
+        margin: 1rem 0;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+}

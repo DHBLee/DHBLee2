@@ -1,0 +1,89 @@
+{% extends "portify/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <div class="center">
+      <h1>Oct 14 2024</h1>
+        <img src="https://www.sapphirestudiosdesign.com/wp-content/uploads/2021/08/Dark_fragrance_ssd_7.jpg" alt="fragrance" width="90%" height="auto" margin="auto">
+        <h1>Nuit Ébène</h1>
+        <p>Nuit Ébène is one of the newest PORTIFY fragrances in the Nuit Enchantée collection line. It is a deep, woody scent that evokes the mystery of the night when the wolf cries.</p>
+        <h1>DISCOVER PORTIFY'S BEST SELLERS</h1>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/media/images/fragrances.jpg" class="d-block carousel-image" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/media/images/fragrances1.jpg" class="d-block carousel-image" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/media/images/fragrances2.jpg" class="d-block carousel-image" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/media/images/fragrances3.jpg" class="d-block carousel-image" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="other">
+            <div class="collection-box-night">
+              <div style="display:flex;">
+                <img src="/media/images/fragrances2.jpg">
+                <div style="margin-left: 30px;">
+                  <h1 style="text-align: left;">Nuit Enchantée</h1>
+                  <p style="text-align: left;">The Nuit Enchantée collection is inspired by the alluring and mysterious essence of the night. Each fragrance in this line embodies elements that evoke darkness, seduction, and depth, creating an olfactory journey through shadowy realms and nocturnal fantasies.</p>
+                </div>
+              </div>
+              <button id="nuit_enchantee">Discover the Collection</button>
+            </div>
+            
+            <div class="collection-box-summer">
+              <div style="display:flex;">
+                <img src="/media/images/fragrances.jpg">
+                <div style="margin-left: 30px;">
+                  <h1 style="text-align: left;">Éclats d'Été</h1>
+                  <p style="text-align: left;">The Éclats d'Été collection evokes the warmth and vibrancy of summer, drawing inspiration from nature's beauty and the playful spirit of the season. Each name reflects a different aspect of summer, from the refreshing scents of citrus and marine notes to the calming fragrances of florals and lavender.</p>
+                </div>
+              </div>
+              <button id="nuit_enchantee">Discover the Collection</button>
+            </div>
+    
+            <div class="collection-box-rainy">
+              <div style="display: flex;">
+                <img src="/media/images/fragrances1.jpg">
+                <div style="margin-left: 30px;">
+                  <h1 style="text-align: left;">Douceurs Pluvieuses</h1>
+                  <p style="text-align: left;">The Douceurs Pluvieuses collection captures the essence of rainy, cold days by combining scents that invoke coziness, warmth, and a touch of nostalgia. The names reflect natural elements and comforting experiences, creating a perfect olfactory blend for those seeking solace on gloomy days.</p>
+                </div>
+              </div>    
+              <button id="nuit_enchantee">Discover the Collection</button>
+            </div>
+    
+            <div id="view_nuit_enchantee" style="display: none;">
+              Ciel Nocturne (Nocturnal Sky) - A fresh scent inspired by the tranquility of the night sky.
+              Rêve Sombre (Dark Dream) - A hauntingly beautiful blend that transports you to a dream world at night.
+              Éclat de Lune (Moonlight Glow) - A bright yet soft fragrance that reflects the glow of the moon.
+              Nuit Ébène is one of the newest PORTIFY fragrances that draws inspiration from the crying worf. It is a deep, woody scent that evokes the mystery of the night.
+              Noir Mystique (Mystic Black) - A dark, enigmatic scent with rich, alluring notes.
+            </div>
+            <div id="view_eclats" style="display: none;">
+              Jardin de Lavande - Lavender Garden
+              Ciel Azur - Azure Sky
+              Étoile du Matin - Morning Star
+              Parfum de Sable - Scent of Sand
+            </div>
+            <div id="view_douceurs" style="display: none;">
+              Fumée de Chêne Oak Smoke
+              Rêve de Châtaigne   Chestnut Dream
+              Lueur de Tempête Storm Glow
+            </div>
+        </div>
+    </div>
+{% endblock %}

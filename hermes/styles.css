@@ -1,0 +1,67 @@
+:root {
+    --font-title: "Orator W01", "Gill Sans", "Gill Sans MT", calibri, serif;
+    --font-body: "Helvetica W01", "Helvetica Neue", sans-serif;
+    --font-body-secondary: "Helvetica W01", "Helvetica Neue", monospace;
+    --font-size-title-xlarge: 2.4615384615rem;
+    --font-size-breadcrumb: 1.2307692308rem;
+    --font-size-title-large: 1.8461538462rem;
+    --font-size-title-medium: 1.5384615385rem;
+    --font-size-title-small: 1.2307692308rem;
+    --font-size-title-xsmall: 1.2307692308rem;
+    --font-size-title-xxsmall: 1.0769230769rem;
+    --font-size-cta: 1.0769230769rem;
+    --font-size-price-1: 1.5384615385rem;
+    --font-size-price-2: 1.0769230769rem;
+    --font-size-price-3: .9230769231rem;
+    --font-size-price-4: 1.2307692308rem;
+    --font-size-price-5: .7692307692rem;
+    --font-size-paragraph: 1.0769230769rem;
+    --font-size-link: .9230769231rem;
+    --font-size-error: .9230769231rem;
+    --font-size-mini-text: .9230769231rem;
+    --font-size-information-text: .8461538462rem;
+    --font-size-text-small: .7692307692rem;
+    --font-size-text-medium: .9230769231rem;
+    --font-size-text-large: 1.0769230769rem;
+    --font-weight-title: 400;
+    --clr-background: #f6f1eb;
+    --clr-white: #ffffff; 
+    --clr-black: #444444; 
+}  
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box; /* it includes the measurments of padding and broder. so the width 600px will be the sum of padding, border, and the content itself. */
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   line-height: calc(1em + 0.5rem);
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--clr-background);
+}
+img,
+picture,
+video,
+canvas,
+svg {
+   display: block;
+   max-width: 100%;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}

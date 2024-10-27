@@ -1,0 +1,109 @@
+{% extends "portify/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <h1>Shopping Cart</h1>
+    <div>
+        {% for item in items %}
+            <div class="cart-box">
+                <div style="display: flex;">
+                    <img src="{{ item.image }}" alt="Product Image">
+                    <div style="display: flex; flex-direction: column; margin: 0 20px;">
+                        <span>{{ item.name }}</span>
+                        <!-- Store the original price as a data attribute for easier access -->
+                        <span class="price" id="price-{{ forloop.counter }}" data-price="{{ item.price }}">${{ item.price }}</span>
+                        <div style="display: flex;">
+                            <!-- Unique IDs for buttons and inputs using the loop counter -->
+                            <button class="quantity-btn minus" data-index="{{ forloop.counter }}" style="width: 20%; height: auto;">-</button>
+                            <input type="text" value="1" class="quantity-input" id="quantity-{{ forloop.counter }}" readonly style="width: 50%; height: auto;">
+                            <button class="quantity-btn add" data-index="{{ forloop.counter }}" style="width: 20%; height: auto;">+</button>
+                        </div>
+                    </div>
+                    <button class="remove-item" data-id="{{ item.id }}" style="background: none; border: none; color: red; font-size: 20px; cursor: pointer; padding: 0 10px; position: absolute; right: 10px;">&times;</button>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <h3>Total Price: $<span id="total-price">{{ total_price }}</span></h3>
+    <button style="margin: auto;">Proceed to Checkout?</button>
+
+    <script>
+        // Getting all buttons and quantity elements
+        const minusButtons = document.querySelectorAll('.quantity-btn.minus');
+        const addButtons = document.querySelectorAll('.quantity-btn.add');
+        const totalPriceElem = document.getElementById('total-price');
+        const removeItem = document.querySelectorAll('.remove-item');
+
+        // Event listeners for minus buttons
+        minusButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const index = this.dataset.index;
+                const quantityInput = document.getElementById(`quantity-${index}`);
+                let quantity = parseInt(quantityInput.value);
+                const priceElem = document.getElementById(`price-${index}`);
+                const pricePerItem = parseFloat(priceElem.getAttribute('data-price')); // Fetch the price as a float
+
+                if (quantity > 1) {
+                    quantity--;
+                    quantityInput.value = quantity;
+                    const newPrice = pricePerItem * quantity;
+                    priceElem.textContent = newPrice.toFixed(2); // Update displayed price
+                    updateTotalPrice();
+                }
+            });
+        });
+
+        // Event listeners for add buttons
+        addButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const index = this.dataset.index;
+                const quantityInput = document.getElementById(`quantity-${index}`);
+                let quantity = parseInt(quantityInput.value);
+                const priceElem = document.getElementById(`price-${index}`);
+                const pricePerItem = parseFloat(priceElem.getAttribute('data-price')); // Fetch the price as a float
+
+                quantity++;
+                quantityInput.value = quantity;
+                const newPrice = pricePerItem * quantity;
+                priceElem.textContent = newPrice.toFixed(2); // Update displayed price
+                updateTotalPrice();
+            });
+        });
+
+        removeItem.forEach(button => {
+            button.addEventListener('click', function() {
+                const itemId = this.dataset.id;
+                console.log(itemId)
+                fetch(`remove_item/${itemId}/`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': '{{ csrf_token }}',
+                    },
+                    body: JSON.stringify({ id: itemId }),
+                })
+                .then(response => {
+                    if (response.ok) {
+                        this.closest('.cart-box').remove();
+                        updateTotalPrice();
+                    } else {
+                        console.error('Failed to remove item');
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+            });
+        });
+
+        // Function to update the total price
+        function updateTotalPrice() {
+            let totalPrice = 0;
+            const priceElems = document.querySelectorAll('.price');
+
+            priceElems.forEach(priceElem => {
+                totalPrice += parseFloat(priceElem.textContent); // Sum all displayed prices
+            });
+
+            totalPriceElem.textContent = totalPrice.toFixed(2); // Update the total price
+        }
+    </script>
+{% endblock %}
