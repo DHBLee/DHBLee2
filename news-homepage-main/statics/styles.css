@@ -1,0 +1,60 @@
+:root {
+    --clr-orange: hwb(35 33% 9%);
+    --clr-red: hsl(5, 86%, 63%);
+    --clr-white: hsla(36, 100%, 99%, 0.583);
+    --clr-grayishblue: hsl(236, 13%, 42%);
+    --clr-darkblue: hsl(240, 100%, 5%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 15px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+svg {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+span {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
