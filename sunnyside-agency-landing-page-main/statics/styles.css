@@ -1,0 +1,68 @@
+:root {
+    --clr-red: hsl(7, 99%, 70%);
+    --clr-yellow: hsl(51, 92%, 67%);
+
+    --clr-cyan: hsl(168, 54%, 73%);
+    --clr-darkblue: hsl(198, 62%, 26%);
+    --clr-darkcyan: hsl(173, 36%, 27%);
+    --clr-desaturatedblue: hsl(212, 27%, 19%);
+    --clr-darkgrayishblue: hsl(213, 9%, 39%);
+    --clr-grayishblue: hsl(232, 10%, 55%);
+    --clr-grayish: hsl(210, 4%, 67%);
+    --clr-white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Fraunces', sans-serif;
+    /*font-family: 'Barlow', sans-serif;*/
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+svg {
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    font-family: 'Fraunces', sans-serif;
+}
+
+span {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}

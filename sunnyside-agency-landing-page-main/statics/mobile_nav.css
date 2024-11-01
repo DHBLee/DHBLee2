@@ -1,0 +1,93 @@
+.mobile_nav {
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.5rem 4rem;
+    max-width: 100%;
+    width: 90%;
+    background-color: var(--clr-white);
+}
+
+
+.mobile_nav::after {
+    content: ""; /* Required for the pseudo-element */
+    position: absolute; /* Position it relative to the box */
+    top: -9px; /* Adjust the position to be above the box */
+    right: 0px; /* Adjust to the right */
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent; /* This makes the top edge transparent */
+    border-bottom: 15px solid transparent; /* This makes the bottom edge transparent */
+    border-right: 15px solid white; 
+
+
+     /* Rotate the triangle by 90 degrees */
+}
+
+.mobile_nav_menu {
+    list-style-type: none;
+}
+
+.mobile_nav_menu li {
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    color: var(--clr-grayishblue);
+}
+
+.mobile_nav_btn {
+    background-color: var(--clr-yellow);
+    border-radius: 25px;
+    padding: 0.7rem 1rem;
+    font-weight: 600;
+}
+
+
+
+@media(min-width: 375px) {
+
+    .mobile_nav {
+        top: 37%;
+        left: 49%;
+    }
+}
+
+@media(min-width: 425px) {
+    
+}
+
+@media(min-width: 586px) {
+    
+    .mobile_nav {
+        top: 53%;
+        left: 49%;
+    }
+
+}
+
+
+@media(min-width: 768px) {
+    
+    .mobile_nav {
+        top: 65%;
+        left: 49%;
+    }
+
+}
+
+@media(min-width: 1024px) {
+    
+}
+
+@media(min-width: 1250px) {
+    
+}
+
+
+@media(min-width: 1440px) {
+    
+}
+

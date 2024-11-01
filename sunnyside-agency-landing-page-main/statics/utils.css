@@ -1,0 +1,40 @@
+
+
+@media(min-width: 375px) {
+    html {
+        font-size: 25px;
+    }
+}
+
+@media(min-width: 425px) {
+    
+}
+
+@media(min-width: 586px) {
+    html {
+        font-size: 35px;
+    }
+}
+
+
+@media(min-width: 768px) {
+    html {
+        font-size: 45px;
+    }
+}
+
+@media(min-width: 1024px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 1250px) {
+    
+}
+
+
+@media(min-width: 1440px) {
+    
+}
+
