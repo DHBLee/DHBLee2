@@ -1,0 +1,64 @@
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-black: hsl(0, 0%, 0%);
+    --clr-gray: hsl(0, 0%, 55%);
+    --darkgray: hsl(0, 0%, 41%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+svg {
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    
+}
+
+button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    background-color: white;
+    font-family: 'Alata', sans-serif;
+    cursor: pointer;
+}
+
+span {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}

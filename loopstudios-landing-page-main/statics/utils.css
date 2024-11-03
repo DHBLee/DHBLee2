@@ -1,0 +1,56 @@
+.container {
+    padding: 0 1rem;
+    width: 100%;
+}
+
+@media(min-width: 375px) {
+    html {
+        font-size: 17px;
+    }
+}
+
+@media(min-width: 425px) {
+
+}
+
+@media(min-width: 520px) {
+    html {
+        font-size: 25px;
+    }
+}
+
+@media(min-width: 768px) {
+
+    html {
+        font-size: 15px;
+    }
+
+    .container {
+        padding: 0 4rem;
+        width: 100%;
+    }
+}
+
+@media(min-width: 1024px) {
+
+    html {
+        font-size: 19px;
+    }
+}
+
+@media(min-width: 1225px) {
+
+    html {
+        font-size: 22px;
+    }
+
+    .container {
+        padding: 0 5rem;
+        width: 100%;
+    }
+
+}
+
+@media(min-width: 1440px) {
+
+}

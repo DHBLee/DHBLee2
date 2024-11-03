@@ -1,0 +1,387 @@
+.main {
+    text-align: center;
+}
+
+.main_img {
+    width: 100%;
+    height: auto;
+    margin-top: 4.5rem
+}
+
+.main_title {
+    font-size: 2rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.main_subtitle {
+    font-family: 'Alata', sans-serif;
+    font-style: 400;
+    color: var(--clr-gray);
+    max-width: 28ch;
+    line-height: 1.5;
+    font-size: 0.8rem;
+    margin-bottom: 5rem;
+}
+
+.main_grid {
+    text-align: left;
+}
+
+.main_grid_title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.main_btn {
+    border: 1px solid;
+    padding: 0.8rem 2.8rem;
+    letter-spacing: 0.4rem;
+    margin: 1rem 0 5rem;
+}
+
+.main_btn:hover, .main_second_btn:hover {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+}
+
+.main_second_btn {
+    display: none;
+    border: 1px solid;
+    padding: 0.5rem 2.8rem;
+    letter-spacing: 0.4rem;
+}
+
+
+.main_earth, .main_arcade, .main_soccer, .main_pic, .main_above, .main_pocket, .main_curiosity, .main_fisheye {
+    width: 100%;
+    margin-bottom: 1rem;
+    position: relative;
+
+
+}
+
+.main_earth::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url('../images/mobile/image-deep-earth.jpg');
+}
+
+.main_arcade::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url('../images/mobile/image-night-arcade.jpg');
+}
+
+.main_soccer::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url('../images/mobile/image-soccer-team.jpg');
+}
+
+.main_pic::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url('../images/mobile/image-grid.jpg');
+}
+
+.main_above::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url('../images/mobile/image-from-above.jpg');
+}
+
+.main_pocket::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url('../images/mobile/image-pocket-borealis.jpg');
+}
+
+.main_curiosity::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url('../images/mobile/image-curiosity.jpg');
+}
+
+.main_fisheye::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url('../images/mobile/image-fisheye.jpg');
+}
+
+.main_earth:hover::before,
+.main_arcade:hover::before,
+.main_soccer:hover::before,
+.main_pic:hover::before,
+.main_above:hover::before,
+.main_pocket:hover::before,
+.main_curiosity:hover::before,
+.main_fisheye:hover::before {
+    opacity: 0.2; 
+    
+    
+}
+
+.main_earth:hover .grid_title, .main_arcade:hover .grid_title, .main_soccer:hover .grid_title, 
+.main_pic:hover .grid_title, .main_above:hover .grid_title, .main_pocket:hover .grid_title, 
+.main_curiosity:hover .grid_title, .main_fisheye:hover .grid_title {
+    color: black; /* Title color on hover */
+}
+
+.grid_title {
+    position: relative;
+    max-width: 13ch;
+    padding: 4rem 0 1.5rem 1.5rem;
+    color: var(--clr-white);
+    font-size: 1.5rem;
+    z-index: 999;
+
+}
+
+@media(min-width: 375px) {
+
+}
+
+@media(min-width: 425px) {
+
+}
+
+@media(min-width: 520px) {
+
+}
+
+@media(min-width: 768px) {
+
+    .main {
+        text-align: left;
+    }
+    .main_first {
+        display: flex;
+        position: relative;
+        margin-bottom: 6rem;
+    }
+
+    .main_desc {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 76%;
+        left: 70%;
+        padding: 3rem 0rem 3rem 3rem;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
+        width: 55%;
+        background-color: var(--clr-white);
+        z-index: 2;
+        overflow: hidden;
+    }
+
+    .main_img {
+        width: 55%;
+    }
+
+    .main_title {
+        max-width: 20ch;
+        font-size: 1.7rem;
+        margin: 0 0 1rem;
+    }
+    
+    .main_subtitle {
+        max-width: 47ch;
+        line-height: 1.5;
+        margin-bottom: 0;
+        font-size: 0.7rem;
+    }
+
+    .main_grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+    .grid_title {
+        padding: 4rem 0 1.5rem 1.5rem;
+        font-size: 1.5rem;
+        z-index: 999;
+    }
+
+    .main_grid_title {
+        margin-bottom: 0rem;
+    }
+
+    .main_second {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .main_btn {
+        display: none;
+    }
+
+    .main_second_btn {
+        display: block;
+    }
+
+    .main_earth, .main_arcade, .main_soccer, .main_pic, .main_above, .main_pocket, .main_curiosity, .main_fisheye {
+        position: relative;
+        margin-bottom: 0rem;
+        display: flex;
+        align-items: flex-end;
+        height: 75vh;
+
+    }
+
+    .main_earth::before {
+        content: "";
+        position: absolute;
+        background-size: cover;
+        background-image: url('../images/desktop/image-deep-earth.jpg');
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        
+    }
+    
+    .main_arcade::before {
+        content: "";
+        position: absolute;
+        background-size: cover;
+        background-image: url('../images/desktop/image-night-arcade.jpg');
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+    
+    .main_soccer::before {
+        content: "";
+        position: absolute;
+        background-size: cover;
+        background-image: url('../images/desktop/image-soccer-team.jpg');
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+    
+    .main_pic::before {
+        content: "";
+        position: absolute;
+        background-size: cover;
+        background-image: url('../images/desktop/image-grid.jpg');
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+    
+    .main_above::before {
+        content: "";
+        position: absolute;
+        background-size: cover;
+        background-image: url('../images/desktop/image-from-above.jpg');
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+    
+    .main_pocket::before {
+        content: "";
+        position: absolute;
+        background-size: cover;
+        background-image: url('../images/desktop/image-pocket-borealis.jpg');
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+    
+    .main_curiosity::before {
+        content: "";
+        position: absolute;
+        background-size: cover;
+        background-image: url('../images/desktop/image-curiosity.jpg');
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+    
+    .main_fisheye::before {
+        content: "";
+        position: absolute;
+        background-size: cover;
+        background-image: url('../images/desktop/image-fisheye.jpg');
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+    
+}
+
+@media(min-width: 1024px) {
+
+    .main_title {
+        max-width: 20ch;
+        font-size: 2rem;
+        margin: 0 0 1rem;
+    }
+    
+    .main_subtitle {
+        max-width: 47ch;
+        line-height: 1.5;
+        margin-bottom: 0;
+        font-size: 0.76rem;
+    }
+}
+
+@media(min-width: 1225px) {
+
+    .main_earth, .main_arcade, .main_soccer, .main_pic, .main_above, .main_pocket, .main_curiosity, .main_fisheye {
+        height: 110vh;
+    }
+
+}
+
+@media(min-width: 1440px) {
+}
