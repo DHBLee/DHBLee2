@@ -1,0 +1,60 @@
+.container {
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+@media(min-width: 375px) {
+
+    html {
+        font-size: 21px;
+    }
+}
+
+@media(min-width: 425px) {
+    
+    html {
+        font-size: 24px;
+    }
+}
+
+@media(min-width: 586px) {
+    
+    html {
+        font-size: 30px;
+    }
+}
+
+@media(min-width: 768px) {
+
+    html {
+        font-size: 18px;
+    }
+    
+}
+
+@media(min-width: 1024px) {
+    
+    html {
+        font-size: 25px;
+    }
+
+    .container {
+        margin-left: 4.5rem;
+    }
+}
+
+@media(min-width: 1250px) {
+    
+    html {
+        font-size: 30px;
+    }
+
+}
+
+@media(min-width: 1440px) {
+    
+    html {
+        font-size: 33px;
+    }
+}
