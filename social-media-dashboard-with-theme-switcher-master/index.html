@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  <link href="statics/styles.css" rel="stylesheet">
+  <link href="statics/header.css" rel="stylesheet">
+  <link href="statics/main.css" rel="stylesheet">
+  <link href="statics/utils.css" rel="stylesheet">
+
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+</head>
+<body>
+
+
+  <header class="header container">
+
+    <div class="header_1">
+      <span class="header1_title">Social media Dashboard</span>
+      <span class="header1_subtitle">Total Followers: 23,004</span>
+    </div>
+
+    <hr>
+
+    <div class="header_2">
+      <span class="header2_title">Dark Mode</span>
+      <label class="switch" onclick="switchTheme()">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+  </header>
+
+  <main class="main container">
+
+    <div class="main_1">
+
+      <div class="main1_grid facebook">
+        <div class="main_flex">
+          <img  style="width: 15%;" src="./images/icon-facebook.svg" alt="facebook">
+          <span class="main1_subsubtitle">@nathanf</span>
+        </div>
+
+        <span class="main1_title">1987</span>
+        <span class="main1_subtitle">FOLLOWERS</span>
+
+        <div class="main_up main_flex">
+          <img src="./images/icon-up.svg" alt="up">
+          <span class="main1_subsubtitle">12 Today</span>
+        </div>
+      </div>
+
+      <div class="main1_grid twitter">
+        <div class="main_flex">
+          <img style="width: 15%;" src="./images/icon-twitter.svg" alt="twitter">
+          <span class="main1_subsubtitle">@nathanf</span>
+        </div>
+
+        <span class="main1_title">1044</span>
+        <span class="main1_subtitle">FOLLOWERS</span>
+
+        <div class="main_up main_flex">
+          <img src="./images/icon-up.svg" alt="up">
+          <span class="main1_subsubtitle">99 Today</span>
+        </div>
+      </div>
+
+      <div class="main1_grid instagram">
+        <div class="main_flex">
+          <img style="width: 15%;" class="img" src="./images/icon-instagram.svg" alt="instagram">
+          <span class="main1_subsubtitle">@realnathanf</span>
+        </div>
+
+        <span class="main1_title">11k</span>
+        <span class="main1_subtitle">FOLLOWERS</span>
+
+        <div class="main_up main_flex">
+          <img src="./images/icon-up.svg" alt="up">
+          <span class="main1_subsubtitle">1099 Today</span>
+        </div>
+      </div>
+
+      <div class="main1_grid youtube">
+        <div class="main_flex">
+          <img style="width: 20%;"src="./images/icon-youtube.svg" alt="youtube">
+          <span class="main1_subsubtitle">Nathan F.</span>
+        </div>
+
+        <span class="main1_title">8239</span>
+        <span class="main1_subtitle">FOLLOWERS</span>
+
+        <div class="main_down main_flex">
+          <img src="./images/icon-down.svg" alt="down">
+          <span class="main1_subsubtitle">144 Today</span>
+        </div>
+      </div> 
+
+    </div>
+
+    <span class="main_main">
+      Overview - Today
+    </span>
+
+    <div class="main_2">
+
+      <div class="main2_grid">
+
+        <span class="main2_title">Page Views</span>
+        <img class="img"  src="./images/icon-facebook.svg" alt="facebook">
+        <span class="main2_subtitle">87</span>
+
+        <div class="main_up two"> 
+          <img src="./images/icon-up.svg" alt="up">
+          <span class="main2_subsubtitle">3%</span>
+        </div>
+        
+      </div>
+
+      <div class="main2_grid">
+
+        <span class="main2_title">Likes</span>
+        <img class="img" src="./images/icon-facebook.svg" alt="facebook">
+        <span class="main2_subtitle">52</span>
+        
+        <div class="main_down two"> 
+          <img src="./images/icon-down.svg" alt="down">
+          <span class="main2_subsubtitle">2%</span>
+        </div>
+
+      </div>
+      <div class="main2_grid">
+
+        <span class="main2_title">Likes</span>
+        <img class="img" src="./images/icon-instagram.svg" alt="instagram">
+        <span class="main2_subtitle">5462</span>
+        
+        <div class="main_up two"> 
+          <img src="./images/icon-up.svg" alt="up">
+          <span class="main2_subsubtitle">2257%</span>
+        </div>
+
+      </div>
+      <div class="main2_grid">
+
+        <span class="main2_title">Profile Views</span>
+        <img class="img" src="./images/icon-instagram.svg" alt="instagram">
+        <span class="main2_subtitle">52k</span>
+        
+        <div class="main_up two"> 
+          <img src="./images/icon-up.svg" alt="up">
+          <span class="main2_subsubtitle">1375%</span>
+        </div>
+
+      </div>
+      <div class="main2_grid">
+
+        <span class="main2_title">Retweets</span>
+        <img class="img" src="./images/icon-twitter.svg" alt="twitter">
+        <span class="main2_subtitle">117</span>
+        
+        <div class="main_up two"> 
+          <img src="./images/icon-up.svg" alt="up">
+          <span class="main2_subsubtitle">303%</span>
+        </div>
+
+      </div>
+      <div class="main2_grid">
+
+        <span class="main2_title">Likes</span>
+        <img class="img" src="./images/icon-twitter.svg" alt="twitter">
+        <span class="main2_subtitle">507</span>
+        
+        <div class="main_up two"> 
+          <img src="./images/icon-up.svg" alt="up">
+          <span class="main2_subsubtitle">553%</span>
+        </div>
+
+      </div>
+      <div class="main2_grid">
+
+        <span class="main2_title">Likes</span>
+        <img class="img" src="./images/icon-youtube.svg" alt="youtube">
+        <span class="main2_subtitle">107</span>
+        
+        <div class="main_down two"> 
+          <img src="./images/icon-down.svg" alt="down">
+          <span class="main2_subsubtitle">19%</span>
+        </div>
+
+      </div>
+      <div class="main2_grid">
+
+        <span class="main2_title">Total Views</span>
+        <img class="img" src="./images/icon-youtube.svg" alt="youtube">
+        <span class="main2_subtitle">1407</span>
+        
+        <div class="main_down two"> 
+          <img src="./images/icon-down.svg" alt="down">
+          <span class="main2_subsubtitle">12%</span>
+        </div>
+
+      </div>
+
+    </div>
+    
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">DHBLee</a>.
+  </div>
+
+  <script>
+
+      function switchTheme() {
+          const body = document.body;
+          const checkbox = document.getElementById('theme-toggle');
+
+          // Toggle the theme based on checkbox state
+          if (checkbox.checked) {
+            console.log('wala'); // Checkbox is checked, add light theme
+            body.classList.add('light-theme');
+          } else {
+            console.log('meron'); // Checkbox is unchecked, remove light theme
+            body.classList.remove('light-theme');
+          }
+        }
+
+  </script>
+
+</body>
+</html>
