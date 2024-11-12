@@ -1,0 +1,17 @@
+.container {
+   background-color: var(--clr-darkblueBG);
+   padding: 2rem 1.5rem;
+}
+
+
+@media(min-width: 1440px) {
+   .container {
+      background-color: var(--clr-darkblueBG);
+      padding: 2rem 10rem;
+   }
+
+   html {
+      font-size: 18px;
+   }
+   
+}
