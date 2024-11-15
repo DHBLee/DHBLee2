@@ -1,9 +1,9 @@
 
 
-# Frontend Mentor - Insure landing page solution
+# Frontend Mentor - E-commerce product page
 
 
-This is a solution to the [Insure landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 
 ## Table of contents
@@ -50,8 +50,8 @@ Users should be able to:
 ### Links
 
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/DHBLee/DHBLee2/tree/DHBLee/Fronend-Mentor/Ecommerce)
+- Live Site URL: [Add live site URL here](https://dhb-lee2-gcm1.vercel.app/)
 
 
 ## My process
