@@ -1,0 +1,39 @@
+.preview {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 19rem;
+}
+
+#close_preview {
+    margin-bottom: 1rem;
+}
+#close_preview:hover path {
+    fill: var(--clr-orange);
+}
+
+
+
+
+@media(min-width: 1024px) {
+    .preview {
+        width: 21rem;
+    }
+}
+
+@media(min-width: 1220px) {
+    .preview {
+        width: 22rem;
+    }
+}
+
+@media(min-width: 1440px) {
+    .preview {
+        width: 23rem;
+    }
+}
