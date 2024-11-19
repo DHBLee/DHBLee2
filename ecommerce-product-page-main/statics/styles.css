@@ -1,0 +1,70 @@
+:root {
+    --clr-orange: hsl(26, 100%, 55%);
+    --clr-paleorange: hsl(25, 100%, 94%);
+    --clr-blue: hsl(220, 13%, 13%);
+    --clr-darkgray: hsl(219, 9%, 45%);
+    --clr-gray: hsl(220, 14%, 75%);
+    --clr-lightgray: hsl(223, 64%, 98%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-black: 0, 0, 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    position: relative;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+svg {
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+span {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
