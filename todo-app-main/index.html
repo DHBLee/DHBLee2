@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="statics/styles.css" rel="stylesheet">
+  <link href="statics/main.css" rel="stylesheet">
+  <link href="statics/utils.css" rel="stylesheet">
+  <title>Frontend Mentor | Todo app</title>
+
+  <script src="statics/main.js"></script>
+</head>
+<body>
+
+  <main class="main">
+    <section class="one">
+      <img class="main_img mobile light" src="./images/bg-mobile-light.jpg" alt="mobile-light">
+      <img class="main_img desktop light" src="./images/bg-desktop-light.jpg" alt="desktop-dark">
+      <img class="main_img mobile dark" style="display: none;" src="./images/bg-mobile-dark.jpg" alt="mobile-light">
+      <img class="main_img desktop dark" style="display: none;" src="./images/bg-desktop-dark.jpg" alt="desktop-dark">
+    </section>
+
+    <section class="two">
+
+        <div class="two_one">
+          <span id="todo">TODO</span>
+
+          <a id="moon" href="#"><img src="./images/icon-moon.svg" alt="moon"></a>
+          <a id="sun" style="display: none;" href="#"><img src="./images/icon-sun.svg" alt="sun"></a>
+        </div>
+
+        <div class="two_two">
+          <div id="circle_two">
+          </div>
+          <input type="type" id="create" name="create" placeholder="Create a new todo..">
+        </div>
+
+        <div class="two_three">
+
+
+
+          <div class="desktop_indicators desktop">
+            <span><span class="items desktop">0</span> items left</span>
+
+            <ul class="desktop_list">
+              <li><a class="all blue desktop" href="#">All</a></li>
+              <li><a class="active desktop" href="#">Active</a></li>
+              <li><a class="completed desktop" href="#">Completed</a></li>
+            </ul>
+
+            <span><a class="clear_completed" href="#">Clear Completed</a></span>
+          </div>
+
+          <div class="two_indicators mobile">
+            <span><span class="items mobile">0</span> items left</span>
+            <a class="clear_completed" href="#">Clear Completed</a>
+          </div>
+
+
+        </div>
+
+        <div class="two_four mobile">
+          <ul>
+            <li><a class="all blue mobile" href="#">All</a></li>
+            <li><a class="active mobile" href="#">Active</a></li>
+            <li><a class="completed mobile" href="#">Completed</a></li>
+          </ul>
+        </div>
+
+        <span id="drag">Drag and drop to reorder list</span>
+
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">DHBLee</a>.
+        </div>
+
+    </section>
+
+  </main>
+
+</body>
+
+</html>

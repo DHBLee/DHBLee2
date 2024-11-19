@@ -1,0 +1,52 @@
+.attribution {
+    color: var(--clr-darkgrayishblue);
+}
+
+
+
+@media (min-width: 375px) {
+    html {
+        font-size: 19px;
+    }
+}
+
+
+@media (min-width: 425px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+
+@media (min-width: 575px) {
+    html {
+        font-size: 21px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+
+@media (min-width: 1220px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1440px) {
+    html {
+        font-size: 20px;
+    }
+}
