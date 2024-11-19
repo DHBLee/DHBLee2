@@ -1,0 +1,94 @@
+:root {
+    --clr-brightblue: hsl(220, 98%, 61%);
+    --clr-check: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+
+    --clr-lightgray: hsl(0, 0%, 98%);
+    --clr-verylightgrayishblue: hsl(236, 33%, 92%);
+    --clr-lightgrayishblue: hsl(233, 11%, 84%);
+    --clr-grayishblue: hsl(236, 9%, 61%);
+    --clr-darkgrayishblue: hsl(235, 19%, 35%);
+}
+
+.dark_theme {
+    --clr-back: hsl(235, 21%, 11%);
+    --clr-lightgray: hsl(235, 24%, 19%);
+    --clr-darkgrayishblue: hsl(234, 39%, 85%);
+    --clr-hover: hsl(236, 33%, 92%);
+    --clr-lightgrayishblue: hsl(234, 11%, 52%);
+    --clr-grayishblue: hsl(233, 14%, 35%);
+    --clr-: hsl(237, 14%, 26%);
+
+    background-color: var(--clr-back);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 18px;
+
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+svg {
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+span {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+input {
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--clr-darkgrayishblue);
+    background-color: inherit;
+}
+
+input:focus {
+    outline: none; 
+    border: none;  
+}
