@@ -45,8 +45,8 @@ Users should be able to:
 ### Links
 
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/DHBLee/DHBLee2/tree/DHBLee/Fronend-Mentor/Job)
+- Live Site URL: [Add live site URL here](https://dhb-lee2-8hsn.vercel.app/)
 
 
 ## My process
