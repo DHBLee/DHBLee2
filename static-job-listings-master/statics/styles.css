@@ -1,0 +1,68 @@
+:root {
+    --clr-desaturatedcyan: hsl(180, 29%, 50%);
+    --clr-lightBG: hsl(180, 52%, 96%);
+    --clr-lightFT: hsl(180, 31%, 95%);
+    --clr-cyan: hsl(180, 8%, 52%);
+    --clr-darkcyan: hsl(180, 14%, 20%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 15px;
+
+}
+
+body {
+    font-family: 'League Spartan', sans-serif ;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+svg {
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+span {
+    display: inline-block;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
