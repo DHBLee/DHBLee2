@@ -1,0 +1,69 @@
+.footer {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--clr-bluefooter);
+    border-radius: 0 75px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    color: var(--clr-white);
+}
+
+.footer_title {
+    margin-bottom: 1rem;
+}
+
+.footer_list li {
+    margin-bottom: 0.5rem;
+    font-weight: 100;
+    font-size: 0.7rem;
+}
+
+.footer_list li:hover {
+    text-decoration: underline;
+}
+
+
+@media(min-width: 375px) {
+    
+}
+
+@media(min-width: 425px) {
+   
+
+}
+
+@media(min-width: 475px) {
+   
+}
+
+@media(min-width: 620px) {
+
+
+}
+
+@media(min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+  }
+
+}
+
+@media(min-width: 1024px) {
+
+
+}
+
+@media(min-width: 1220px) {
+
+}
+
+@media(min-width: 1440px) {
+
+}
