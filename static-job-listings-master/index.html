@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  <link href="statics/styles.css" rel="stylesheet">
+  <link href="statics/main.css" rel="stylesheet">
+  <link href="statics/utils.css" rel="stylesheet">
+
+  <script src="statics/main.js"></script>
+  
+  <title>Frontend Mentor | Job Listings</title>
+
+
+</head>
+<body>
+  <div class="background">
+    <img class="img_bg mobile" src="./images/bg-header-mobile.svg" alt="bg_mobile">
+    <img class="img_bg desktop" src="./images/bg-header-desktop.svg" alt="bg_desktop">
+  </div>
+
+  <div class="filter_wrapper">
+    <div class="filter">
+
+    </div>
+
+    <span id="filter_clear">Clear</span>
+  </div>
+
+
+
+  <main class="main">
+    <section class="main_section">
+
+      <div class="main_jobs" data-role="frontend" data-level="senior" data-languages="html, css, javascript">
+        <div class="main_left">
+          <img class="main_img" src="./images/photosnap.svg" alt="photosnap">
+          <div class="main_wrapper">
+            <div class="main_desc">
+              <span class="main_company">Photosnap</span>
+              <div class="main_highlight">
+                <span class="main_new">NEW!</span>
+                <span class="main_featured">FEATURED</span>
+              </div>
+            </div>
+            <span class="main_title">Senior Frontend Developer</span>
+            <div class="main_details">
+              <span class="main_date">1d ago</span>
+              <span>.</span>
+              <span class="main_worktype">Full Time</span>
+              <span>.</span>
+              <span class="main_location">USA only</span>
+            </div>
+          </div>
+        </div>
+  
+        <hr class="main_mobile">
+        <div class="main_tags">
+            <span class="main_languages">Frontend</span>
+            <span class="main_languages">Senior</span>
+            <span class="main_languages">HTML</span>
+            <span class="main_languages">CSS</span>
+            <span class="main_languages">JavaScript</span>
+        </div> 
+        
+      </div>
+
+      <div class="main_jobs" data-role="fullstack" data-level="midweight" data-languages="python" data-tools="react">
+        
+        <div class="main_left">
+          <img class="main_img" src="./images/manage.svg" alt="manage">
+          <div class="main_wrapper">
+            <div class="main_desc">
+              <span class="main_company">Manage</span>
+              <div class="main_highlight">
+                <span class="main_new">NEW!</span>
+                <span class="main_featured">FEATURED</span>
+              </div>
+            </div>
+            <span class="main_title">Fullstack Developer</span>
+            <div class="main_details">
+              <span class="main_date">1d ago</span>
+              <span>.</span>
+              <span class="main_worktype">Part Time</span>
+              <span>.</span>
+              <span class="main_location">Remote</span>
+            </div>
+          </div>
+        </div>
+      
+        <hr class="main_mobile">
+        <div class="main_tags">
+            <span class="main_languages">Fullstack</span>
+            <span class="main_languages">Midweight</span>
+            <span class="main_languages">Python</span>
+            <span class="main_languages">React</span>
+        </div>
+        
+      </div>
+
+      <div class="main_jobs" data-role="frontend" data-level="junior" data-languages="javascript" data-tools="react, sass">
+        
+        <div class="main_left">
+          <img class="main_img" src="./images/account.svg" alt="account">
+          <div class="main_wrapper">
+            <div class="main_desc">
+              <span class="main_company">Account</span>
+              <div class="main_highlight">
+                <span class="main_new">NEW!</span>
+              </div>
+            </div>
+            <span class="main_title">Junior Frontend Developer</span>
+            <div class="main_details">
+              <span class="main_date">2d ago</span>
+              <span>.</span>
+              <span class="main_worktype">Part Time</span>
+              <span>.</span>
+              <span class="main_location">USA only</span>
+            </div>
+          </div>
+        </div>
+       
+        <hr class="main_mobile">
+        <div class="main_tags">
+            <span class="main_languages">Frontend</span>
+            <span class="main_languages">Junior</span>
+            <span class="main_languages">React</span>
+            <span class="main_languages">Sass</span>
+            <span class="main_languages">JavaScript</span>
+        </div>
+        
+      </div>
+
+      <div class="main_jobs" data-role="frontend" data-level="junior" data-languages="css, javascript">
+        
+        <div class="main_left">
+          <img class="main_img" src="./images/myhome.svg" alt="myhome">
+          <div class="main_wrapper">
+            <div class="main_desc">
+              <span class="main_company">MyHome</span>
+              <div class="main_highlight">
+  
+              </div>
+            </div>
+            <span class="main_title">Junior Frontend Developer</span>
+            <div class="main_details">
+              <span class="main_date">5d ago</span>
+              <span>.</span>
+              <span class="main_worktype">Contract</span>
+              <span>.</span>
+              <span class="main_location">USA only</span>
+            </div>
+          </div>
+        </div>
+       
+        <hr class="main_mobile">
+        <div class="main_tags">
+            <span class="main_languages">Frontend</span>
+            <span class="main_languages">Junior</span>
+            <span class="main_languages">CSS</span>
+            <span class="main_languages">JavaScript</span>
+        </div>
+        
+      </div>
+
+      <div class="main_jobs" data-role="fullstack" data-level="midweight" data-languages="javascript, ruby" data-tools="sass">
+        
+        <div class="main_left">
+          <img class="main_img" src="./images/loop-studios.svg" alt="loop-studios">
+          <div class="main_wrapper">
+            <div class="main_desc">
+              <span class="main_company">Loop Studios</span>
+              <div class="main_highlight none">
+  
+              </div>
+            </div>
+            <span class="main_title">Software Engineer</span>
+            <div class="main_details">
+              <span class="main_date">1w ago</span>
+              <span>.</span>
+              <span class="main_worktype">Full Time</span>
+              <span>.</span>
+              <span class="main_location">Worldwide</span>
+            </div>
+          </div>
+        </div>
+        
+        <hr class="main_mobile">
+        <div class="main_tags">
+            <span class="main_languages">Fullstack</span>
+            <span class="main_languages">Midweight</span>
+            <span class="main_languages">JavaScript</span>
+            <span class="main_languages">Sass</span>
+            <span class="main_languages">Ruby</span>
+        </div>
+        
+      </div>
+
+      <div class="main_jobs" data-role="backend" data-level="junior" data-languages="ruby" data-tools="ror">
+        
+        <div class="main_left">
+          <img class="main_img" src="./images/faceit.svg" alt="faceit">
+          <div class="main_wrapper">
+            <div class="main_desc">
+              <span class="main_company">FaceIt</span>
+              <div class="main_highlight">
+  
+              </div>
+            </div>
+            <span class="main_title">Junior Backend Developer</span>
+            <div class="main_details">
+              <span class="main_date">2w ago</span>
+              <span>.</span>
+              <span class="main_worktype">Full Time</span>
+              <span>.</span>
+              <span class="main_location">UK only</span>
+            </div>
+          </div>
+        </div>
+       
+        <hr class="main_mobile">
+        <div class="main_tags">
+            <span class="main_languages">Backend</span>
+            <span class="main_languages">Junior</span>
+            <span class="main_languages">Ruby</span>
+            <span class="main_languages">RoR</span>
+        </div>
+        
+      </div>
+
+      <div class="main_jobs" data-role="frontend" data-level="junior" data-languages="html, javascript" data-tools="sass">
+        
+        <div class="main_left">
+          <img class="main_img" src="./images/shortly.svg" alt="shortly">
+          <div class="main_wrapper">
+            <div class="main_desc">
+              <span class="main_company">Shortly</span>
+              <div class="main_highlight">
+  
+              </div>
+            </div>
+            <span class="main_title">Junior Developer</span>
+            <div class="main_details">
+              <span class="main_date">2w ago</span>
+              <span>.</span>
+              <span class="main_worktype">Full Time</span>
+              <span>.</span>
+              <span class="main_location">Worldwide</span>
+            </div>
+          </div>
+        </div>
+       
+        <hr class="main_mobile">
+        <div class="main_tags">
+            <span class="main_languages">Frontend</span>
+            <span class="main_languages">Junior</span>
+            <span class="main_languages">HTML</span>
+            <span class="main_languages">Sass</span>
+            <span class="main_languages">JavaScript</span>
+        </div>
+        
+      </div>
+
+      <div class="main_jobs" data-role="frontend" data-level="junior" data-languages="javascript" data-tools="vue, sass">
+        
+        <div class="main_left">
+          <img class="main_img" src="./images/insure.svg" alt="insure">
+          <div class="main_wrapper">
+            <div class="main_desc">
+              <span class="main_company">Insure</span>
+              <div class="main_highlight">
+  
+              </div>
+            </div>
+            <span class="main_title">Junior Frontend Developer</span>
+            <div class="main_details">
+              <span class="main_date">2w ago</span>
+              <span>.</span>
+              <span class="main_worktype">Full Time</span>
+              <span>.</span>
+              <span class="main_location">USA only</span>
+            </div>
+          </div>
+        </div>
+        
+        <hr class="main_mobile">
+        <div class="main_tags">
+            <span class="main_languages">Frontend</span>
+            <span class="main_languages">Junior</span>
+            <span class="main_languages">Vue</span>
+            <span class="main_languages">JavaScript</span>
+            <span class="main_languages">Sass</span>
+        </div>
+        
+      </div>
+
+      <div class="main_jobs" data-role="fullstack" data-level="midweight" data-languages="javascript, python" data-tools="django">
+        
+        <div class="main_left">
+          <img class="main_img" src="./images/eyecam-co.svg" alt="eyecam">
+          <div class="main_wrapper">
+            <div class="main_desc">
+              <span class="main_company">Eyecam Co.</span>
+              <div class="main_highlight">
+  
+              </div>
+            </div>
+            <span class="main_title">Full Stack Engineer</span>
+            <div class="main_details">
+              <span class="main_date">3w ago</span>
+              <span>.</span>
+              <span class="main_worktype">Full Time</span>
+              <span>.</span>
+              <span class="main_location">Worldwide</span>
+            </div>
+          </div>
+        </div>
+        
+        <hr class="main_mobile">
+        <div class="main_tags">
+            <span class="main_languages">Fullstack</span>
+            <span class="main_languages">Midweight</span>
+            <span class="main_languages">JavaScript</span>
+            <span class="main_languages">Django</span>
+            <span class="main_languages">Python</span>
+        </div>
+        
+      </div>
+
+      <div class="main_jobs" data-role="frontend" data-level="junior" data-languages="javascript" data-tools="react, sass">
+        
+        <div class="main_left">
+          <img class="main_img" src="./images/the-air-filter-company.svg" alt="Air Filter">
+          <div class="main_wrapper">
+            <div class="main_desc">
+              <span class="main_company">The Air Filter Company</span>
+              <div class="main_highlight">
+  
+              </div>
+            </div>
+            <span class="main_title">Front-end Dev</span>
+            <div class="main_details">
+              <span class="main_date">1mo ago</span>
+              <span>.</span>
+              <span class="main_worktype">Part Time</span>
+              <span>.</span>
+              <span class="main_location">Worldwide</span>
+            </div>
+          </div>
+        </div>
+       
+        <hr class="main_mobile">
+        <div class="main_tags">
+            <span class="main_languages">Frontend</span>
+            <span class="main_languages">Junior</span>
+            <span class="main_languages">React</span>
+            <span class="main_languages">Sass</span>
+            <span class="main_languages">JavaScript</span>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">DHBLee</a>.
+  </div>
+</body>
+</html>

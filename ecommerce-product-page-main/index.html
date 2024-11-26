@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  <link href="statics/styles.css" rel="stylesheet">
+  <link href="statics/header.css" rel="stylesheet">
+  <link href="statics/mobile_nav.css" rel="stylesheet">
+  <link href="statics/cart.css" rel="stylesheet">
+  <link href="statics/preview.css" rel="stylesheet">
+  <link href="statics/main.css" rel="stylesheet">
+  <link href="statics/utils.css" rel="stylesheet">
+
+  <script src="statics/main.js" defer></script>
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+<body>
+
+  <header class="header container">
+    <div class="header_left">
+      <img id="menu" src="./images/icon-menu.svg" alt="menu">
+
+      <img id="header_logo" src="./images/logo.svg" alt="logo">
+
+      <ul class="header_list">
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="header_right">
+
+      <div class="header_cart">
+        <img id="cart" src="./images/icon-cart.svg" alt="cart">
+        <div id="cart_info" class="quantity">0</div>
+      </div>
+
+      <img id="header_profile" src="./images/image-avatar.png" alt="profile">
+    </div>
+  </header>
+
+  <hr class="base-line ">
+
+  <nav class="mobile_nav" style="display: none;">
+    <img id="close" src="./images/icon-close.svg" alt="close">
+    <ul class="mobile_list">
+      <li><a href="#">Collections</a></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="cart_info" style="display: none;">
+
+    <span class="cart_black title">Cart</span>
+    <hr id="cart_hr">
+    <div class="cart_details">
+      <img id="cart_img" src="./images/image-product-1-thumbnail.jpg" alt="product">
+
+      <div class="cart_texts">
+
+        <span class="cart_gray">Fall Limited Edition Sneakers</span>
+        <div class="cart_price">
+          <span class="cart_gray" id="unit_price">$125.00</span>
+          <span class="cart_gray">x</span>
+          <span class="cart_gray quantity">0</span>
+          <span class="cart_black" id="final_price"></span>
+        </div>
+      </div>
+
+      <img id="delete" src="./images/icon-delete.svg" alt="delete">
+    </div>
+    <span class="cart_details" id="checkout">Checkout</span>
+    <span id="empty">Your cart is empty.</span>
+
+  </div>
+  
+  <div class="preview">
+    <svg id="close_preview" width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="white" fill-rule="evenodd"/></svg>
+    <section class="main_one">
+
+      <div class="main_one_product">
+        <img class="product_img" src="./images/image-product-1.jpg" alt="product_1">
+        <img id="previous" style="display: block; margin-left: -1rem;" src="./images/icon-previous.svg" alt="previous">
+        <img id="next" style="display: block; margin-right: -1rem;" src="./images/icon-next.svg" alt="next">
+      </div>
+
+      <div class="main_one_preview">
+        <div class="thumbnail" id="border">
+          <img  src="./images/image-product-1-thumbnail.jpg" alt="product1">
+        </div>
+        <div class="thumbnail">
+          <img  src="./images/image-product-2-thumbnail.jpg" alt="product2">
+        </div>
+        <div class="thumbnail">
+          <img  src="./images/image-product-3-thumbnail.jpg" alt="product3">
+        </div>
+        <div class="thumbnail">
+          <img src="./images/image-product-4-thumbnail.jpg" alt="product4">
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+
+
+
+  <main class="main container">
+
+    <section class="main_one">
+
+      <div class="main_one_product">
+        <img class="product_img" src="./images/image-product-1.jpg" alt="product_1">
+        <img id="previous" src="./images/icon-previous.svg" alt="previous">
+        <img id="next" src="./images/icon-next.svg" alt="next">
+      </div>
+
+      <div class="main_one_preview">
+        <div class="thumbnail" id="border">
+          <img  src="./images/image-product-1-thumbnail.jpg" alt="product1">
+        </div>
+        <div class="thumbnail">
+          <img  src="./images/image-product-2-thumbnail.jpg" alt="product2">
+        </div>
+        <div class="thumbnail">
+          <img  src="./images/image-product-3-thumbnail.jpg" alt="product3">
+        </div>
+        <div class="thumbnail">
+          <img src="./images/image-product-4-thumbnail.jpg" alt="product4">
+        </div>
+      </div>
+
+    </section>
+
+    <section class="main_two">
+        <span id="company">SNEAKER COMPANY</span>
+        <span id="product_title">Fall Limited Edition Sneakers</span>
+        <span id="product_description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</span>
+
+        <div class="price">
+          <div class="description_discount">
+            <span id="discounted_price">$125.00</span>
+            <span id="discount">50%</span>
+          </div>
+          <span id="original_price">$250.00</span>
+        </div>
+
+        <div class="buttons">
+          <div class="how_many">
+            <img id="minus" src="./images/icon-minus.svg" alt="minus">
+            <span class="quantity">0</span>
+            <img id="plus" src="./images/icon-plus.svg" alt="plus">
+          </div>
+  
+          <div class="main_btn">
+            <img id="main_cart" src="./images/icon-cart.svg" alt="cart">
+            <span id="add_to_cart">
+              Add to cart
+            </span>
+          </div>
+        </div>
+
+    </section>
+
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">DHBLee</a>.
+  </div>
+</body>
+</html>
