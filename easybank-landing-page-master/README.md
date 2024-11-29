@@ -51,6 +51,7 @@ Users should be able to:
 
 ## My process
 
+I focused on building the HTML strucutre first with a goal of making my CSS style easier to do.
 
 ### Built with
 
@@ -66,12 +67,12 @@ Users should be able to:
 
 ### What I learned
 
-
+I learned how to position an image that overlaps with some sides and not overlap in other sides by tweaking some styles.
 
 
 ### Continued development
 
-
+TO be able to use more efficient, scalable codes in the future
 
 
 ### Useful resources
