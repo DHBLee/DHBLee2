@@ -1,0 +1,68 @@
+:root {
+    --clr-blueDARK: hsl(233, 26%, 24%);
+    --clr-green: hsl(136, 65%, 51%);
+    --clr-cyan: hsl(192, 70%, 51%);
+    --clr-blue:  hsl(233, 8%, 62%);
+    --clr-blueLIGHT: hsl(220, 16%, 96%);
+    --clr-gray: hsl(0, 0%, 98%);
+    --clr-white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+svg {
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+span {
+    display: inline-block;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
