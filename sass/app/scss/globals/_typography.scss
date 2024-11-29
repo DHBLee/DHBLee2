@@ -1,11 +1,13 @@
+@use '../util/' as u;  
+
 h1, h2, h3 {
     font-weight: 700;
     line-height: 1.1;
     margin-top: 0;
 }
-
+ 
 h1 {
-    font-size: clamp(28px, 16px + 2vw, 40px);
+    font-size: clamp(u.rem(28), u.rem(16) + 2vw, u.rem(40));
 }
 
 p {
