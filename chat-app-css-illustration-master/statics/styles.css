@@ -1,0 +1,87 @@
+:root {
+    --clr-violetSH : hsl(276, 100%, 81%);
+    --clr-violetLEFT: hsl(276, 55%, 52%);
+    --clr-violetRIGHT: hsl(271, 15%, 43%);
+    --clr-bluePLACE: hsl(210, 3%, 71%);
+    --clr-violetMH: hsl(271, 36%, 24%);
+    --clr-violetP: hsl(300, 20%, 91%);
+
+    --clr-magenta: hsl(293, 100%, 63%);
+    --clr-violet: hsl(265, 100%, 61%);
+
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-violetAPP: hsl(270, 20%, 96%);
+    --clr-violetSUBMIT: hsl(271, 36%, 24%);
+    --clr-violetRADIO: hsl(289, 100%, 72%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+svg {
+    margin: 0;
+    padding: 0;
+    overflow: visible; 
+}
+
+button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+span {
+    display: inline-block;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
