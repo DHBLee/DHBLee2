@@ -1,0 +1,31 @@
+.mobile_nav {
+    display: none;
+    position: absolute;
+    gap: 1rem;
+    top: 4rem;
+    background-color: var(--clr-white);
+    border-radius: 3px;
+    z-index: 4;
+    box-shadow: 70px 70px 20rem var(--clr-blueDARK);
+    width: calc(100% - 2rem);
+    margin-inline: 1rem;
+}
+
+.mobile_nav_list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    color: var(--clr-blueDARK);
+    font-size: 0.8rem;
+
+    a:hover {
+        color: var(--clr-green);
+    }
+}
+
+.close {
+    display: none;
+}
