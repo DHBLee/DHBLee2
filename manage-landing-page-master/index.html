@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="dist/style.css">
+  <link rel="stylesheet" href="../dist/style.css">
   <script src="js/script.js"></script>
   <title>Frontend Mentor | Manage landing page</title>
 
@@ -21,7 +21,8 @@
 </head>
 <body>
 
-  <header class="header">
+  <img class="bg" src="./images/bg-tablet-pattern.svg" alt="tablet">
+  <header class="header container">
     <img class="header__logo" src="./images/logo.svg" alt="logo">
 
     <ul class="header__list desktop">
@@ -51,7 +52,7 @@
 
   <main class="main">
 
-    <section class="section1">
+    <section class="section1 container">
 
       <div class="section1__wrapper1">
         <img src="./images/illustration-intro.svg" alt="illustration">
@@ -62,6 +63,8 @@
         <span class="section1__subtitle">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</span>
         <span class="btn">Get Started</span>
       </div>
+
+      <img class="section1__bg" src="./images/bg-tablet-pattern.svg" alt="tablet">
 
     </section>
 
@@ -77,7 +80,7 @@
         <div class="section2__wrapper2__wrapper">
 
           <div class="section2__wrapper2__wrapper__wrapper">
-            <span class="section__number">01</span>
+            <span class="section2__number">01</span>
             <span class="section2__subtitle">Track company-wide progress</span>
           </div>
 
@@ -103,7 +106,7 @@
         <div class="section2__wrapper2__wrapper">
 
           <div class="section2__wrapper2__wrapper__wrapper">
-            <span class="section__number">03</span>
+            <span class="section2__number">03</span>
             <span class="section2__subtitle">Everything you need in one place</span>
           </div>
 
@@ -125,14 +128,19 @@
 
       <div class="section3__wrapper2">
 
-        <div class="section3__wrapper2__wrapper">
-          <img src="./images/avatar-ali.png" alt="ali">
+          <img class="section3__img" src="./images/avatar-ali.png" alt="ali">
           <span class="section3__subtitle">Ali Bravo</span>
           <span class="section3__subsubtitle">
             "We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."
           </span>
-        </div>
 
+      </div>
+
+      <div class="section3__circles">
+        <span class="circle one"></span>
+        <span class="circle two"></span>
+        <span class="circle three"></span>
+        <span class="circle four"></span>
       </div>
 
       <div class="section3__wrapper3">
@@ -147,11 +155,13 @@
 
       <span class="section4__btn">Get Started</span>
 
+      <img class="section4__bg mobile" src="./images/bg-simplify-section-mobile.svg" alt="mobile">
+      <img class="section4__bg desktop" src="./images/bg-simplify-section-desktop.svg" alt="desktop">
     </section>
 
   </main>
 
-  <footer class="footer">
+  <footer class="footer container">
 
     <div class="footer__wrapper1">
       <input class="footer__input" placeholder="Updated in your inbox...">
@@ -160,14 +170,14 @@
 
     <div class="footer__wrapper2">
 
-      <ul class="footer__list1">
+      <ul class="footer__list">
         <li><a href="#">Home</a></li>
         <li><a href="#">Pricing</a></li>
         <li><a href="#">Products</a></li>
         <li><a href="#">About Us</a></li>
       </ul>
 
-      <ul class="footer__list2">
+      <ul class="footer__list">
         <li><a href="#">Careers</a></li>
         <li><a href="#">Community</a></li>
         <li><a href="#">Privacy Policy</a></li>
@@ -194,80 +204,10 @@
     </div>
 
   </footer>
-  Pricing
-  Product
-  About Us
-  Careers
-  Community
-
-
-  Get Started
-
-  What’s different about Manage?
-
-  Manage provides all the functionality your team needs, without 
-  the complexity. Our software is tailor-made for modern digital 
-  product teams. 
-
-  01
-  Track company-wide progress
-  See how your day-to-day tasks fit into the wider vision. Go from 
-  tracking progress at the milestone level all the way done to the 
-  smallest of details. Never lose sight of the bigger picture again.
-
-  02
-  Advanced built-in reports
-  Set internal delivery estimates and track progress toward company 
-  goals. Our customisable dashboard helps you build out the reports 
-  you need to keep key stakeholders informed.
-
-  03
-  Everything you need in one place
-  Stop jumping from one service to another to communicate, store files, 
-  track tasks and share documents. Manage offers an all-in-one team 
-  productivity solution.
-
-  What they’ve said
-
-  Anisha Li
-  “Manage has supercharged our team’s workflow. The ability to maintain 
-  visibility on larger milestones at all times keeps everyone motivated.”
-
-  Ali Bravo
-  “We have been able to cancel so many other subscriptions since using 
-  Manage. There is no more cross-channel confusion and everyone is much 
-  more focused.”
-
-  Richard Watts
-  “Manage allows us to provide structure and process. It keeps us organized 
-  and focused. I can’t stop recommending them to everyone I talk to!”
-
-  Shanai Gough
-  “Their software allows us to track, manage and collaborate on our projects 
-  from anywhere. It keeps the whole team in-sync without being intrusive.”
-
-  Get Started
-
-  Simplify how your team works today.
-  Get Started
-
-  Home
-  Pricing
-  Products
-  About Us
-  Careers
-  Community
-  Privacy Policy
-
-  Updates in your inbox…
-  Go
-
-  Copyright 2020. All Rights Reserved
-
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">DHBLee</a>.
   </div>
 </body>
 </html>

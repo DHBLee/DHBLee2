@@ -13,11 +13,13 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+
+    overflow-x: hidden;
 }
 
 body {
     font-family: 'Be Vietnam Pro', sans-serif;
-    background-color: var(--clr-palered);
+    background-color: var(--clr-lightgray);
 }
 
 img,
@@ -57,4 +59,16 @@ a {
 
 ul {
     list-style-type: none;
+}
+
+input {
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--clr-darkgrayishblue);
+    background-color: inherit;
+}
+
+input:focus {
+    outline: none; 
+    border: none;  
 }
