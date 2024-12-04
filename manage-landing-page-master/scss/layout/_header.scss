@@ -11,4 +11,15 @@
         display: none;
     }
 
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        font-size: 0.7rem;
+
+        & li:hover {
+            color: var(--clr-gray);
+        }
+    }
 }

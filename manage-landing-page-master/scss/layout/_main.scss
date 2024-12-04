@@ -1,6 +1,9 @@
-.desktop {
-    display: none;
+@media(max-width: 767px) {
+    .desktop {
+        display: none;
+    }
 }
+
 
 .bg {
     position: absolute;
@@ -8,6 +11,10 @@
     width: clamp(20rem, 20rem + 4vw, 50rem);
     top: -3rem;
     right: -4rem;
+
+    @media(min-width: 768px) {
+        width: clamp(30rem, 30rem + 4vw, 40rem);
+    }
 }
 
 .btn {
@@ -19,6 +26,11 @@
 
     box-shadow: 0 7px 15px -5px var(--clr-red);
     cursor: pointer;
+
+    @media(min-width: 768px) {
+        font-size: 0.7rem;
+        padding: 0.5rem 1.5rem;
+    }
 }
 
 .btn:hover {
@@ -44,12 +56,25 @@
 
     &__wrapper2 {
         gap: 0.5rem;
+
+        @media(min-width: 768px) {
+            gap: 1rem;
+        }
+    }
+
+    &__img {
+        width: 80%;
+        margin: auto;
     }
 
     &__title {
-        color: var(--clr-blue);
+        color: var(--clr-darkblue);
         font-weight: 700;
         font-size: 2rem;
+
+        @media(min-width: 768px) {
+            max-width: 15ch;
+        }
     }
 
     &__subtitle {
@@ -57,8 +82,12 @@
         line-height: 1.5;
         font-size: 0.9rem;
 
-        @media(max-width: 768px) {
+        @media(max-width: 767px) {
             margin-bottom: 1rem;
+        }
+
+        @media(min-width: 768px) {
+            max-width: 33ch;
         }
     }
 
@@ -79,7 +108,6 @@
     &__wrapper1 {
         gap: 1rem;
         text-align: center;
-        padding-inline: 1rem;
     }
 
     &__wrapper2 {
@@ -91,9 +119,7 @@
         align-items: flex-start;
         gap: 0.5rem;
 
-        @media (max-width: 768px) {
-            padding-left: 1rem;
-        }
+
     }
 
     &__wrapper2__wrapper__wrapper {
@@ -104,9 +130,12 @@
         justify-content: flex-start;
         gap: 1rem;
 
-        background-color: var(--clr-palered);
+        @media(max-width: 767px) {
+            background-color: var(--clr-palered);
+        }
 
     }
+
 
 
 
@@ -114,6 +143,10 @@
         color: var(--clr-blue);
         font-weight: 700;
         font-size: 1.5rem;
+
+        @media(max-width: 767px) {
+            max-width: 15ch;
+        }
     }
 
     &__subtitle {
@@ -122,10 +155,16 @@
         color: var(--clr-blue);
     }
 
-    &__subsubtitle {
+    &__subsubtitle, &__subsubtitleQ {
         color: var(--clr-gray);
         font-size: 0.8rem;
         line-height: 2;
+    }
+
+    &__subsubtitleQ {
+        @media(min-width: 767px) {
+            padding-left: 4.5rem;
+        }
     }
 
     &__number {
@@ -164,7 +203,7 @@
         color: var(--clr-gray);
         font-size: 0.8rem;
 
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             padding-inline: 1.5rem;
         }
     }
@@ -195,10 +234,12 @@
         font-size: 1.7rem;
         color: var(--clr-lightgray);
         font-weight: 500;
+        max-width: 12ch;
 
-        @media(max-width:768px) {
-            max-width: 12ch;
+        @media(min-width: 768px) {
+            max-width: 17ch;
         }
+
     }
 
     &__btn {
@@ -255,3 +296,102 @@
         opacity: 0;
     }
 }
+
+
+@media(min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+
+    .section1 {
+        width: 100%;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+        text-align: left;
+        
+        &__wrapper2 {
+            align-items: flex-start;
+            padding-top: 2rem;
+        }
+
+        &__bg {
+            display: none;
+        }
+
+        &__img {
+            margin-right: 0;
+        }
+    }
+
+    .section2 {
+        position: relative;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+
+        &__wrapper1 {
+            text-align: left;
+        }
+
+        &__bg {
+            width: clamp(30rem, 15rem + 4vw, 50rem);
+            position: absolute;
+            overflow: hidden;
+            z-index: -1;
+            bottom: -10rem;
+            left: -20rem;
+        }
+
+        &__title {
+            align-self: flex-start;
+            max-width: 18ch;
+        }
+    }
+
+    .section4 {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        overflow: hidden;
+
+        padding: 3rem 2rem;
+
+        &__bg {
+            width: 80%;
+            left: 5rem;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .section4 {
+        padding-inline: 4rem;
+    }
+}
+
+
+@media(min-width: 1220px) {
+
+    .section2 {
+        gap: 3rem;
+    }
+
+    .section4 {
+        padding-inline: 6rem;
+    }
+}
+
+
+@media(min-width: 1440px) {
+
+    .section2 {
+        gap: 5rem;
+    }
+
+    .section4 {
+        padding-inline: 8rem;
+    }
+}
+
